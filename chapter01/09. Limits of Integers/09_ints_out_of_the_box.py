@@ -20,3 +20,5 @@ magic_result = a.__add__(b)
 # Print the result obtained using the magic method
 print("a + b =", magic_result)
 
+magic_result2 = b.__add__(a)
+print(f"{b} + {a} = {magic_result2}")

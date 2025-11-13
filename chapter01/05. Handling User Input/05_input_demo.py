@@ -16,4 +16,5 @@ height = float(input("Please enter your height in cm: "))
 # Convert height from centimeters to meters and print it
 print("You are", height / 100, "meters tall")
 
-
+# extra
+print("You are", 2025 - int(input("Please enter your year of birth: ")), "years old")
