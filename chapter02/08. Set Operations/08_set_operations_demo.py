@@ -11,10 +11,12 @@ print("\nAfter second adding 'oranges':", bag)
 
 # Attempt to remove an item that may not be in the set
 item_to_remove = "eggs2"
+# Removing a non-existing item throws "KeyError: 'eggs2'" exception
 # bag.remove(item_to_remove) # KeyError
 
 if item_to_remove in bag:
-    bag.remove(item_to_remove)
+  bag.remove(item_to_remove)
+  print(f"{item_to_remove} removed from bag.")
 else:
     print(f"\n'{item_to_remove}' not found in the bag.")
 

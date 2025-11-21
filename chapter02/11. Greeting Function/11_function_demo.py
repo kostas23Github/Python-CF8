@@ -1,3 +1,9 @@
+# imports....
+# definitions....
+# def main()
+
+# Above is the recommended flow of a program. All calls should happen inside main(), and the program should run only when main() is called.
+
 def say_hello(place: str = "Coding Factory"):
     """
     Prints a greeting message.
@@ -12,8 +18,11 @@ def main():
     """
     The main function to execute the program.
     """
-    # Call the say_hello function
+    # Call the say_hello function leaving the default param
     say_hello()
+
+    # Calling with a param
+    say_hello("Alice")
 
     # Print the documentation of the say_hello function
     print("\nFunction Documentation:")
