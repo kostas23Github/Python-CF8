@@ -46,6 +46,7 @@ def main():
         print_menu()  # Display the menu options.
         choice = get_choice()  # Get the user's choice.
 
+        # choice in ("q", "Q")
         if not choice:  # If the user does not enter anything.
             continue  # Skip to the next iteration of the loop.
 
@@ -60,6 +61,7 @@ def main():
         # \d+: Matches any digit (0-9) These digits can be 1 or more.
         # $: Asserts position at the end of the string.
         pattern = r'^\d$'
+        # or pattern=pattern
         valid = re.match(pattern, choice)  # Use regex to validate the choice.
 
         if not valid:  # If the choice is not valid (not a single digit).

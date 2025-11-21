@@ -1,4 +1,4 @@
-def get_average(*numbers):
+def get_average(*numbers):  # * equals ... to JS
     """
     Calculate the average of a list of numbers and format the result to 2 decimal places.
 

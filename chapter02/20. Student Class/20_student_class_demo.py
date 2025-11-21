@@ -7,7 +7,7 @@ class Student:
         lastname (str): The last name of the student.
     """
 
-    def __init__(self, firstname: str, lastname: str):
+    def __init__(self, firstname: str, lastname: str, privateLight, privateStrict):
         """
         Initialize a Student object with the provided first name and last name.
 
@@ -17,6 +17,8 @@ class Student:
         """
         self.firstname = firstname
         self.lastname = lastname
+        self._privateLight = privateLight     # hint to other devs that they should handle this field as private.
+        self.__privateStrict = privateStrict  # will throw error, can access with module name and field name(python mangles its name)
 
 def main():
     # Create a Student object

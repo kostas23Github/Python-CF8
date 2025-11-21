@@ -20,6 +20,7 @@ class Point:
         self.x = x
         self.y = y
 
+    # Override print() of this class.
     def __str__(self):
         """
         Return a string representation of the Point object.
@@ -31,7 +32,8 @@ class Point:
 
     def distance_to(self, other):
         """
-        Calculate the Euclidean distance between this point and another point.
+        Calculate the Euclidean distance between this point and another point. 
+        square root of((x1^2 - x2^2) + (y1^2 - y2^2))
 
         Args:
             other (Point): Another Point object to calculate the distance to.

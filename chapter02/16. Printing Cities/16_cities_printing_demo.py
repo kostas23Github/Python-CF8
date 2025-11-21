@@ -1,6 +1,8 @@
+# Σε αυτό το module παραμετροποίησε την print ώστε να έχει διαφορετικές default τιμές.
+# Σημαντικό σε κάθε γλώσσα να χρησιμοποιώ το API της ώστε να γράφω επαγγελματικό κώδικα.
 def print_cities(*cities: str, separator: str = ", ") -> None:
     """
-    Print a list of cities separated by a specified separator.
+  Print a list of cities separated by specified separator and ending with a specified end character.
 
     Parameters:
     *cities (str): A variable number of city names to be printed.
